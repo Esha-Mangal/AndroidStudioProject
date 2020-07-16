@@ -15,7 +15,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.navigation2.R;
-import com.example.navigation2.ui.chats.ChatsViewModel;
 
 public class FeedbackFragment extends Fragment {
 

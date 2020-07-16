@@ -1,4 +1,4 @@
-package com.example.navigation2.ui.tools;
+package com.example.navigation2.ui.email;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.navigation2.R;
 
-public class ToolsFragment extends Fragment {
+public class EmailFragment extends Fragment {
 
-    private ToolsViewModel toolsViewModel;
+    private EmailViewModel emailViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        toolsViewModel =
-                ViewModelProviders.of(this).get(ToolsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_tools, container, false);
-        final TextView textView = root.findViewById(R.id.text_tools);
-        toolsViewModel.getText().observe(this, new Observer<String>() {
+        emailViewModel =
+                ViewModelProviders.of(this).get(EmailViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_email, container, false);
+        final TextView textView = root.findViewById(R.id.text_email);
+       emailViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

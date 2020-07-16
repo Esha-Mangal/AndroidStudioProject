@@ -1,16 +1,16 @@
-package com.example.navigation2.ui.slideshow;
+package com.example.navigation2.ui.account;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
-
+public class AccountViewModel extends ViewModel {
+    // TODO: Implement the ViewModel
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public AccountViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is settings fragment");
+        mText.setValue("This is Account fragment");
     }
 
     public LiveData<String> getText() {

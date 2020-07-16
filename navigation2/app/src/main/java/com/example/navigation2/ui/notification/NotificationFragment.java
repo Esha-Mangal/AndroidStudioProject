@@ -1,4 +1,4 @@
-package com.example.navigation2.ui.chats;
+package com.example.navigation2.ui.notification;
 
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -16,17 +16,17 @@ import android.widget.TextView;
 
 import com.example.navigation2.R;
 
-public class ChatsFragment extends Fragment {
+public class NotificationFragment extends Fragment {
 
-    private ChatsViewModel chatsViewModel;
+    private NotificationViewModel notificationViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        chatsViewModel =
-                ViewModelProviders.of(this).get(ChatsViewModel.class);
-        View root = inflater.inflate(R.layout.chats_fragment, container, false);
-        final TextView textView = root.findViewById(R.id.text_chats);
-        chatsViewModel.getText().observe(this, new Observer<String>() {
+        notificationViewModel =
+                ViewModelProviders.of(this).get(NotificationViewModel.class);
+        View root = inflater.inflate(R.layout.notification_fragment, container, false);
+        final TextView textView = root.findViewById(R.id.text_notification);
+        notificationViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
@@ -35,5 +35,3 @@ public class ChatsFragment extends Fragment {
         return root;
     }
 }
-
-

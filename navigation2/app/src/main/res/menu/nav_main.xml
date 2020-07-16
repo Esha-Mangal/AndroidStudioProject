@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_home_black_24dp"
         android:title="home" />
     <item
-        android:id="@+id/nav_chat"
-        android:icon="@drawable/ic_message_black_24dp"
-        android:title="chat" />
+        android:icon="@drawable/bank"
+        android:title="banking" />
     <item
-        android:id="@+id/nav_filter"
-        android:icon="@drawable/ic_format_align_center_black_24dp"
-        android:title="filter" />
+        android:icon="@drawable/finance"
+        android:title="finance" />
     <item
-        android:id="@+id/nav_tools"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="notification" />
-    <item
-        android:id="@+id/nav_feedback"
-        android:icon="@drawable/ic_feedback_black_24dp"
-        android:title="feedback" />
+        android:icon="@drawable/pension"
+        android:title="pension" />
+
 </menu>

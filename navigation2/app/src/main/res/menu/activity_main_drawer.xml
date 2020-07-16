@@ -9,11 +9,23 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_account"
+            android:icon="@drawable/account"
+            android:title="Delete my Account" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_email"
+            android:icon="@drawable/ic_email_black_24dp"
+            android:title="Enable email update" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Enable notification update" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/nav_settings"
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="Settings" />
     </group>
@@ -30,5 +42,10 @@
                 android:title="@string/menu_send" />
         </menu>
     </item>
+
+<group>
+    <item android:title="LogOut"></item>
+    <item android:title="FAQs"></item>
+</group>
 
 </menu>

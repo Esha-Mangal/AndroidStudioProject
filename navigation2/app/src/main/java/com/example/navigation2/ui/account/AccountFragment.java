@@ -1,4 +1,4 @@
-package com.example.navigation2.ui.filter;
+package com.example.navigation2.ui.account;
 
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -15,19 +15,19 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.navigation2.R;
-import com.example.navigation2.ui.chats.ChatsViewModel;
 
-public class FilterFragment extends Fragment {
 
-    private FilterViewModel filterViewModel;
+public class AccountFragment extends Fragment {
+
+    private AccountViewModel accountViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        filterViewModel =
-                ViewModelProviders.of(this).get(FilterViewModel.class);
-        View root = inflater.inflate(R.layout.filter_fragment, container, false);
-        final TextView textView = root.findViewById(R.id.text_filter);
-        filterViewModel.getText().observe(this, new Observer<String>() {
+       accountViewModel =
+                ViewModelProviders.of(this).get(AccountViewModel.class);
+        View root = inflater.inflate(R.layout.account_fragment, container, false);
+        final TextView textView = root.findViewById(R.id.text_account);
+        accountViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
@@ -35,4 +35,5 @@ public class FilterFragment extends Fragment {
         });
         return root;
     }
+
 }
